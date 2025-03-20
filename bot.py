@@ -29,7 +29,7 @@ async def handle_payment_callback(callback_query):
         description="Pay and get a link",
         payload="access_to_private",
         currency=CURRENCY,
-        prices=[LabeledPrice(label="XTR", amount=1)]  # 1 XTR для теста
+        prices=[LabeledPrice(label="XTR", amount=499)]  # 1 XTR для теста
     )
     await callback_query.answer()
 
