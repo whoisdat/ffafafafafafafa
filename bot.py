@@ -39,7 +39,7 @@ async def handle_payment_callback(callback_query):
         description="Pay and get a link",
         payload="access_to_private",
         currency=CURRENCY,
-        prices=[LabeledPrice(label="XTR", amount=5)]  # 499 XTR для Telegram Stars
+        prices=[LabeledPrice(label="XTR", amount=5)]  # 5 XTR для Telegram Stars
     )
     await callback_query.answer()
 
